@@ -1,2 +1,17 @@
-chmod u+x Anaconda3-2022.10-Linux-x86_64.sh
-./Anaconda3-2022.10-Linux-x86_64.sh
+#Download the conda from official website.
+#Use that command to extract the conda.
+
+  chmod u+x Anaconda3-2022.10-Linux-x86_64.sh
+  ./Anaconda3-2022.10-Linux-x86_64.sh
+ 
+#Create new conda environment
+ conda create -n test python==3.9
+ 
+# To activate this environment, use
+
+     $ conda activate test
+
+# To deactivate an active environment, use
+
+     $ conda deactivate
+
