@@ -14,4 +14,8 @@
 # To deactivate an active environment, use
 
      $ conda deactivate
+# To check the conda version
+     
+# to create environment in vs code
 
+  conda create -p venv python==3.9 -y
