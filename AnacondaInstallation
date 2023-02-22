@@ -16,6 +16,8 @@
      $ conda deactivate
 # To check the conda version
      
-# to create environment in vs code
-
+# to create environment in vs code (--venv-- it is a virtual environment name) 
   conda create -p venv python==3.9 -y
+  
+# To activate the venv in vscode
+  conda activate venv/
