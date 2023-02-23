@@ -13,3 +13,8 @@ sudo apt install docker.io
 ---This command will show all the images that are present locally on your ubantu operatind system
   sudo docker images
   
+---To pull the images of the software
+    sudo docker pull mysql 
+ # as same as we can pull the images of every available software in docker hub.
+
+---
