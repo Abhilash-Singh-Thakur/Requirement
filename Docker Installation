@@ -17,4 +17,5 @@ sudo apt install docker.io
     sudo docker pull mysql 
  # as same as we can pull the images of every available software in docker hub.
 
----
+---Docker desktop installation command
+    sudo dpkg -i ./docker-desktop-4.16.2-amd64.deb
