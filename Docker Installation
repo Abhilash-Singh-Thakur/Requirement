@@ -10,3 +10,6 @@ sudo apt install docker.io
 ---check that the docker is running or not and puller the hello-world image from docker hub
   sudo docker run hello-world
   
+---This command will show all the images that are present locally on your ubantu operatind system
+  sudo docker images
+  
