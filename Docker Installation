@@ -51,4 +51,5 @@ sudo apt install docker.io
 --- To remove the image
     docker rmi imageId_first_4_digits
    
---- 
+--- To stop the container
+    docker stop container_id
