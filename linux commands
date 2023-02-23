@@ -1,0 +1,3 @@
+--to change the root user
+  su newusername
+  
