@@ -19,3 +19,36 @@ sudo apt install docker.io
 
 ---Docker desktop installation command
     sudo dpkg -i ./docker-desktop-4.16.2-amd64.deb
+    
+---To check the present images. You will also get the image id 
+    Docker image ls
+
+---To run the specific image
+    Docker run imageid_upto_4digits
+    
+---#showing the container is up and running.
+    Docker ps 
+    
+---Showing container creation status.
+    Docker ps -a
+    
+---Docker mongo db image port mapping
+    docker run -p 27017:8080 imageId_4digits
+    
+--- Docker nginx imager port mapping
+    docker run -p 9000:8081 imageId_4digits
+    
+--- Remove the container after use
+    docker rm containerId_4digits
+    
+--- Remove all the docker container#This will remove the container and give the container id.
+    Docker rm $(docker ps -a -q)
+    
+--- We can create the 3 container of same image with different container id.
+
+--- docker ps -a -q # by this command will get the container id of all the 3 container.
+
+--- To remove the image
+    docker rmi imageId_first_4_digits
+   
+--- 
