@@ -1,0 +1,12 @@
+---for install the docker 
+sudo apt install docker.io
+
+---to check the status of docker
+    sudo systemctl status docker
+
+---to start the docker container
+  sudo systemctl enable --now docker
+  
+---check that the docker is running or not and puller the hello-world image from docker hub
+  sudo docker run hello-world
+  
