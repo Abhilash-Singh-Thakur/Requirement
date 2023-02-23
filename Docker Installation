@@ -29,7 +29,7 @@ sudo apt install docker.io
 ---#showing the container is up and running.
     Docker ps 
     
----Showing container creation status.
+---Showing all the container creation status.
     Docker ps -a
     
 ---Docker mongo db image port mapping
