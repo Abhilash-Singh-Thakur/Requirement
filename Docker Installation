@@ -79,6 +79,32 @@ sudo apt install docker.io
 ---Removing all the images.
     docker rmi $(docker image ls -q)
    
----
+---To create the docker file.
+    touch Dockerfile
+    
+---Inside the docker file we will write the dependecy and configuration.
+    FROM python:3-alpine #because app working on python3 
+    WORKDIR /service
+    COPY requirements.txt
+    RUN pip install -r requirements.txt
+    COPY . ./ #(.) copy all the thing to current working directory ,(./) to docker directory
+    EXPOSE 8082
+    ENTRYPOINT ["python3", "app.py"] #python3 is the requirement for working directory.App.py is the entry point.
+    
+--- If we want that some file should be ignore then we need to create the file which is.
+    touch .dockerignore
+    '''inside the dockerignore file we will write all the ignore folders or file.
+    like - venv'''
+   
+---To convert the dockerfile to docker image we have to build it.
+    docker build -t Image_name_anything_you_want:latest .
+ 
+---To run the app image 
+    docker run -p 8082:8070 hellopython #by default port i 8070 and custom port is 8082.
+    
+    
+
+    
+    
 
     
