@@ -56,3 +56,29 @@ sudo apt install docker.io
 
 ---Force remove the running container
     docker rm -f container_id_4digits
+
+--->Port mapping<----
+
+--- Port mapping of nginx server #by default port is 8080
+    docker run -p 9000:8080 bitnami/nginx
+    #default port is 8080 as per documentation and 9000 is custom port that we can change.
+    
+--- rename the container name and do the port mapping.
+    docker run --name nginx -p 8080:8080 bitnami/nginx
+   
+--- Run the container by detached mode so it will be running on background if i closed the terminal.
+    docker run --name nginx2 -p 8080 -d bitnami/nginx
+    docker run -d nginx
+
+--- Forcefully remove the image.
+    docker rmi -f image_id 4digits
+    
+---Showing all the image_id
+    docker image ls -q
+   
+---Removing all the images.
+    docker rmi $(docker image ls -q)
+   
+---
+
+    
