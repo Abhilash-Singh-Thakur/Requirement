@@ -46,7 +46,7 @@ sudo apt install docker.io
     
 --- We can create the 3 container of same image with different container id.
 
---- docker ps -a -q # by this command will get the container id of all the 3 container.
+--- docker ps -a -q # by this command will get the container id of all the container.
 
 --- To remove the image
     docker rmi imageId_first_4_digits
