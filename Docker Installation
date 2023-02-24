@@ -53,3 +53,6 @@ sudo apt install docker.io
    
 --- To stop the container
     docker stop container_id_first_4_latter
+
+---Force remove the running container
+    docker rm -f container_id_4digits
