@@ -102,8 +102,11 @@ sudo apt install docker.io
 ---To run the app image 
     docker run -p 8082:8070 hellopython #by default port i 8070 and custom port is 8082.
     
-    
+---To create the network between 2 containers
+    docker network create todo-app
 
+---Volume mounting inside the docker container.
+    https://www.geeksforgeeks.org/mounting-a-volume-inside-docker-container/
     
     
 
