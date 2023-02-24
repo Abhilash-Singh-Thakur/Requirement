@@ -108,6 +108,19 @@ sudo apt install docker.io
 ---Volume mounting inside the docker container.
     https://www.geeksforgeeks.org/mounting-a-volume-inside-docker-container/
     
-    
+--- Volume mounting between 2 containers
+
+docker run -d `
+>>network todo-app --network-alias mysql `
+>> -v todo-mysql-data:/var/lib/mysql `
+>> -e MYSQL_ROOT_PASSWORD=secret `
+>> -e MYSQL_DATABASE=todos `
+>> mysql:8.0
+
+-- Execute the mysql database.
+>> docker exec -it 8f93 mysql -u root -p
+
+--
+    docker run -it --network todo-app nicolaka/netshoot
 
     
